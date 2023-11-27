@@ -6,5 +6,5 @@ public interface IGestion<T> {
     public void supprimerEmploye(T t);
     public void displayEmploye();
     public void trierEmployeParId(); //Comparable
-    public void trierEmployeParNomDépartementEtGrade(); //Comparator
+    public void trierEmployeParNomDepartementEtGrade(); //Comparator
 }

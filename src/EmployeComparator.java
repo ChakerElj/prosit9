@@ -9,7 +9,6 @@ public class EmployeComparator implements Comparator<Employee> {
         }
 
 
-        int gradeComparison = Integer.compare(o1.getGrade(), o2.getGrade());
-        return gradeComparison;
+        return Integer.compare(o1.getGrade(), o2.getGrade());
     }
 }

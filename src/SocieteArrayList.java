@@ -3,12 +3,13 @@ import java.util.*;
 public class SocieteArrayList implements IGestion<Employee>{
 
 
-    private List<Employee> employeeList = new ArrayList<>();
+    private final List<Employee> employeeList = new ArrayList<>();
 
 
     @Override
     public void ajouterEmpoye(Employee employee) {
            employeeList.add(employee);
+
     }
 
     @Override
@@ -50,7 +51,7 @@ public class SocieteArrayList implements IGestion<Employee>{
     }
 
     @Override
-    public void trierEmployeParNomDépartementEtGrade() {
+    public void trierEmployeParNomDepartementEtGrade() {
         this.employeeList.sort(new EmployeComparator());
 
     }
