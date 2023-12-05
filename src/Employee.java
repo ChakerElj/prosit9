@@ -7,13 +7,13 @@ public class Employee implements Comparable<Employee>
     private int id;
     private String prenom ;
     private String nom;
-    private String dep;
+    private Departement dep;
     private int grade ;
 
     public Employee() {
     }
 
-    public Employee(int id, String prenom, String nom, String dep, int grade) {
+    public Employee(int id, String prenom, String nom, Departement dep, int grade) {
         this.id = id;
         this.prenom = prenom;
         this.nom = nom;
@@ -45,11 +45,11 @@ public class Employee implements Comparable<Employee>
         this.nom = nom;
     }
 
-    public String getDep() {
+    public Departement getDep() {
         return dep;
     }
 
-    public void setDep(String dep) {
+    public void setDep(Departement dep) {
         this.dep = dep;
     }
 
